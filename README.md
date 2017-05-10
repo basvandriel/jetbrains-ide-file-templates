@@ -62,7 +62,7 @@ Add the following lines to the project variables file:
 Add the license name between the `""`.
  
 The supported licenses are currently:
-* MIT
+* The Unlicensed
 
 If license is not supported you want, go to `File > Settings > Editor > File and Code templates`
 and navigate to the `Includes` tab. 
