@@ -8,7 +8,6 @@
 * Composer
 
 ## Installation
-
 Checkout the repository to any directory on your computer and run the make file.
 This will create a compressed `settings.jar` file in the directory where the repository was cloned to.
 
@@ -21,17 +20,29 @@ make
 ```
 
 Afterwards open one of the supported JetBrains IDEs
-and go to `File > Import Settings...` and select the previous generated `settings.jar` file.
+and go to `File > Import Settings...` and select and import the previous generated `settings.jar` file.
 
-To use the file templates...
+To use the file templates open your project and
+go to `File > Settings > Editor > File and Code templates` and navigate to the `Includes` tab.
  
-`author-variables.vtl` file
-```shell
-# Author's name copyright
-#set($PROJECT_COPYRIGHT = $PROJECT_NAME)
-```
+In here open the `author-variables.vtl` file and change the
+`$AUTHOR_NAME` and `$AUTHOR_EMAIL` to the corresponding name and email address.
 
-`<projectname>-variables.vtl` file
+```shell
+## Author variables
+##
+## Author's full name
+#set($AUTHOR_NAME = "Bas van Driel")
+##
+## Author's email address
+#set($AUTHOR_EMAIL = "basvandriel94@gmail.com")
+```
+---
+
+Afterwards create a `.vtl` file in the same folder with the exact same name as your project, followed by `-variables`. 
+For example this could be `jetbrains-ide-file-templates-variables.vtl`. The `jetbrains-ide-file-templates` part would be the project name.
+
+Then paste in the following content and replace `<projectname>` with your project name:
 
 ```shell
 ## <projectname> variables
@@ -45,7 +56,6 @@ You can add can add a project license, homepage and GitHub link to the variables
 ### Project license
 Add the following lines to the project variables file:
 ```shell
-##
 ## Project license
 #set($PROJECT_LICENSE = "")
 ```
@@ -54,7 +64,8 @@ Add the license name between the `""`.
 The supported licenses are currently:
 * MIT
 
-If license is not supported you want, go to `File > Settings > Editor > File and Code templates` and navigate to the `Includes` tab.
+If license is not supported you want, go to `File > Settings > Editor > File and Code templates`
+and navigate to the `Includes` tab. 
 
 Afterwards add a `.vtl` file with the name of the license followed by `-license`. Inside the file, add the following lines
 ```
