@@ -1,5 +1,9 @@
 /**
- * TODO Document the purpose of this PHP file.
+ * TODO Document the purpose of the ${NAME} trait
+#if (${NAMESPACE})
+ *
+ * @package ${NAMESPACE}
+#end
  *
  * @author ${AUTHOR_NAME} <${AUTHOR_EMAIL}>
  * @copyright ${COPYRIGHT_YEAR} ${COPYRIGHT_OWNER}

@@ -11,15 +11,15 @@
 
 #end
 ##
-## Class namespace
+## Interface namespace
 #if (${NAMESPACE})
 namespace ${NAMESPACE};
 #end
 ##
 ## Empty line to seperate with the namespace
 
-## Class documentation
-#parse("PHP Class Doc Comment.php")
-class ${NAME} {
+## Interface documentation
+#parse("PHP Interface Doc Comment.php")
+interface ${NAME} {
 
 }
