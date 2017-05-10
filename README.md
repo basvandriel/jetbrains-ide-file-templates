@@ -1,5 +1,6 @@
 # jetbrains-ide-file-templates
-
+This repository contains file templates for JetBrains IDEs for better formatting 
+of documentation. This also helps for faster programming.
 
 ## Requirements
 
