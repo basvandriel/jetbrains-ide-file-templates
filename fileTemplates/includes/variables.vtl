@@ -1,0 +1,20 @@
+## Variables
+##
+## Author information
+#parse("author-variables.vtl")
+##
+## Project information
+#parse("${PROJECT_NAME}-variables.vtl")
+##
+## Copyright year information
+#if(${PROJECT_YEAR})
+#set($COPYRIGHT_YEAR = "${PROJECT_YEAR}")
+#else
+#set($COPYRIGHT_YEAR = "${YEAR}")
+#end
+## Copyright owner information
+#if(${PROJECT_COPYRIGHT})
+#set($COPYRIGHT_OWNER = "${PROJECT_COPYRIGHT}")
+#else
+#set($COPYRIGHT_OWNER = "${AUTHOR_NAME}")
+#end
