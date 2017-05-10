@@ -2,6 +2,9 @@
 settings.zip
 settings.jar
 
+## File template files
+fileTemplates/includes/jetbrains-ide-file-templates-variables.vtl
+
 ### IDE specific files
 ## Jetbrains IDEs
 ## Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
