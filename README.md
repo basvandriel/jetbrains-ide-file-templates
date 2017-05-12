@@ -75,8 +75,24 @@ Afterwards add a `.vtl` file with the name of the license followed by `-license`
 #set($LICENSE_NAME = "")
 #set($LICENSE_URL = "")
 ```
-
 After these lines add the license text itself.
+
+### Home page link
+Add the following lines to the project variables file:
+```shell
+## Home page link
+#set($PROJECT_HOMEPAGE = "")
+```
+Afterwards add the project home page name between the `""`.
+
+### GitHub link
+Add the following lines to the project variables file:
+```shell
+## GitHub link
+#set($PROJECT_GITHUB = "")
+```
+Afterwards add the project home page name between the `""`.
+
 ## License
 
 This project is licensed under the The Unlicensed - see the [LICENSE.md](LICENSE.md) file for details.
