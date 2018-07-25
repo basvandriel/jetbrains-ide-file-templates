@@ -11,8 +11,8 @@
  *
  * @license ${LICENSE_URL} ${LICENSE_NAME}
 #end
- *
 #if(${PROJECT_HOMEPAGE})
+ *
  * @see ${PROJECT_HOMEPAGE}
 #end
 #if(${PROJECT_GITHUB})

@@ -3,7 +3,7 @@
  *
  * @author ${AUTHOR_NAME} <${AUTHOR_EMAIL}>
  * @copyright ${COPYRIGHT_YEAR} ${COPYRIGHT_OWNER}
-#if(${PROJECT_LICENSE})
+#if(${PROJECT_LICENSE} != "")
  *
  * @license ${LICENSE_URL} ${LICENSE_NAME}
 #end

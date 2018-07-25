@@ -2,9 +2,8 @@
  * TODO Document the purpose of the ${NAME} class
 #if (${NAMESPACE})
  *
- * @package ${NAMESPACE}
+ * @package ${PACKAGE_NAME}
 #end
- *
  * @author ${AUTHOR_NAME} <${AUTHOR_EMAIL}>
  * @copyright ${COPYRIGHT_YEAR} ${COPYRIGHT_OWNER}
 #if(${PROJECT_LICENSE} != "")
