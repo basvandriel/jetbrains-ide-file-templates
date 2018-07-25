@@ -39,46 +39,18 @@ In here open the `author-variables.vtl` file and change the
 #set($AUTHOR_EMAIL = "basvandriel94@gmail.com")
 ```
 ---
-
-Afterwards create a `.vtl` file in the same folder with the exact same name as your project, followed by `-variables`. 
-For example this could be `jetbrains-ide-file-templates-variables.vtl`. The `jetbrains-ide-file-templates` part would be the project name.
-
-Then paste in the following content and replace `<projectname>` with your project name:
-
-```shell
-## <projectname> variables
-##
-## Project copyright
-#set($PROJECT_COPYRIGHT = $PROJECT_NAME)
-```
-
-You can add can add a project license, homepage and GitHub link to the variables.
+You can also add a project license, homepage and a GitHub link to the variables. None of these are required.
 
 ### Project license
-Add the following lines to the project variables file:
-```shell
-## Project license
-#set($PROJECT_LICENSE = "")
-```
-Add the license name between the `""`.
+By default, the project license is set to the MIT license. You can change this by opening
+up the `license-variable` file and changing `the $PROJECT_LICENSE` variable to the desired project license.
  
 The supported licenses are currently:
+* MIT
 * The Unlicensed
 
-If license is not supported you want, go to `File > Settings > Editor > File and Code templates`
-and navigate to the `Includes` tab. 
-
-Afterwards add a `.vtl` file with the name of the license followed by `-license`. Inside the file, add the following lines
-```
-## License
-## 
-#set($LICENSE_NAME = "")
-#set($LICENSE_URL = "")
-```
-After these lines add the license text itself.
-
 ### Home page link
-Add the following lines to the project variables file:
+Add the following lines to the `variables.vtl `file:
 ```shell
 ## Home page link
 #set($PROJECT_HOMEPAGE = "")
@@ -86,7 +58,7 @@ Add the following lines to the project variables file:
 Afterwards add the project home page name between the `""`.
 
 ### GitHub link
-Add the following lines to the project variables file:
+Add the following lines to the `variables.vtl `file:
 ```shell
 ## GitHub link
 #set($PROJECT_GITHUB = "")
@@ -94,7 +66,6 @@ Add the following lines to the project variables file:
 Afterwards add the project home page name between the `""`.
 
 ## License
-
 This project is licensed under the The Unlicensed - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Links
