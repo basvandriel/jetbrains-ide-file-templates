@@ -3,7 +3,6 @@ This repository contains file templates for JetBrains IDEs for better formatting
 of documentation. This also helps for faster programming.
 
 ## Requirements
-
 * The unix `make` tool
 * The unix `zip` tool
 * Composer
@@ -39,16 +38,21 @@ In here open the `author-variables.vtl` file and change the
 #set($AUTHOR_EMAIL = "basvandriel94@gmail.com")
 ```
 ---
-You can also add a project license the class documentation.
-None of these are required. Note that these have to be changed every time you work in another project.
 
 ### Project license
+
+You can also add a project license the class documentation. 
+
 By default, the project license is set to the MIT license. You can change this by opening
 up the `license-variable` file and changing the `$PROJECT_LICENSE` variable to the desired project license.
  
+Note that these have to be changed every time you work in another project if you want another license.
+
 The supported licenses are currently:
 * MIT
 * The Unlicensed
+
+Having a project license is not required.
 
 ## License
 This project is licensed under the The Unlicensed - see the [LICENSE.md](LICENSE.md) file for details.
