@@ -5,7 +5,6 @@ of documentation. This also helps for faster programming.
 ## Requirements
 * The unix `make` tool
 * The unix `zip` tool
-* Composer
 
 ## Installation
 Checkout the repository to any directory on your computer and run the make file.
