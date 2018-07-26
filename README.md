@@ -39,31 +39,16 @@ In here open the `author-variables.vtl` file and change the
 #set($AUTHOR_EMAIL = "basvandriel94@gmail.com")
 ```
 ---
-You can also add a project license, homepage and a GitHub link to the variables. None of these are required.
+You can also add a project license the class documentation.
+None of these are required. Note that these have to be changed every time you work in another project.
 
 ### Project license
 By default, the project license is set to the MIT license. You can change this by opening
-up the `license-variable` file and changing `the $PROJECT_LICENSE` variable to the desired project license.
+up the `license-variable` file and changing the `$PROJECT_LICENSE` variable to the desired project license.
  
 The supported licenses are currently:
 * MIT
 * The Unlicensed
-
-### Home page link
-Add the following lines to the `variables.vtl `file:
-```shell
-## Home page link
-#set($PROJECT_HOMEPAGE = "")
-```
-Afterwards add the project home page name between the `""`.
-
-### GitHub link
-Add the following lines to the `variables.vtl `file:
-```shell
-## GitHub link
-#set($PROJECT_GITHUB = "")
-```
-Afterwards add the project home page name between the `""`.
 
 ## License
 This project is licensed under the The Unlicensed - see the [LICENSE.md](LICENSE.md) file for details.
